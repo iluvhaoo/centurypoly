@@ -29,12 +29,12 @@ button:hover {
   border: 5px solid #333;
   margin: 20px auto;
   background-image: conic-gradient(
-    rgb(88, 42, 42) 0deg 60deg,
-    rgb(114, 58, 58) 60deg 120deg,
-    rgb(128, 63, 63) 120deg 180deg,
-    rgb(163, 81, 81) 180deg 240deg,
-    rgb(209, 102, 102) 240deg 300deg,
-    rgb(233, 120, 120) 300deg 360deg
+    rgb(35, 32, 66) 0deg 60deg,
+    rgb(74, 75, 145) 60deg 120deg,
+    rgb(85, 98, 170) 120deg 180deg,
+    rgb(96, 111, 190) 180deg 240deg,
+    rgb(111, 132, 224) 240deg 300deg,
+    rgb(120, 158, 240) 300deg 360deg
   );
   transition: transform 4s ease-out;
 }
