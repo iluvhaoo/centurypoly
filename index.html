@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kutu Oyunu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="mainMenu">
+    <h1>Kutu Oyunu</h1>
+    <button onclick="startGameFlow()">🎲 Oyna</button>
+    <button onclick="startDiceFlow()">🎯 Zar At</button>
+  </div>
+
+  <div id="gameSection" style="display: none;">
+    <label for="playerCount">Oyuncu Sayısı:</label>
+    <select id="playerCount">
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    <button onclick="showNameInputs()">İsimleri Gir</button>
+    <div id="nameInputs" style="display: none;">
+      <div id="inputsContainer"></div>
+      <button onclick="startGame()">Oyunu Başlat</button>
+    </div>
+
+    <div id="wheel-container" style="display: none;">
+      <div id="wheel" class="wheel"></div>
+      <button id="spin-btn" onclick="spin()">Çevir!</button>
+      <p id="result"></p>
+      <button onclick="resetGame()">🔄 Tekrar Oyna</button>
+    </div>
+  </div>
+
+  <div id="diceSection" style="display: none;">
+    <h2>Zar At!</h2>
+    <button onclick="rollDice()">🎲 Zar At</button>
+    <p id="diceResult"></p>
+    <button onclick="resetGame()">🔄 Başa Dön</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

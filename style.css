@@ -1,0 +1,40 @@
+body {
+   font-family: "Berkshire Swash", serif;
+   font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background: #afb1bb;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c2d6e;
+  color: white;
+}
+
+button:hover {
+  background-color: #2c2d6e;
+}
+
+.wheel {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  margin: 20px auto;
+  background-image: conic-gradient(
+    rgb(88, 42, 42) 0deg 60deg,
+    rgb(114, 58, 58) 60deg 120deg,
+    rgb(128, 63, 63) 120deg 180deg,
+    rgb(163, 81, 81) 180deg 240deg,
+    rgb(209, 102, 102) 240deg 300deg,
+    rgb(233, 120, 120) 300deg 360deg
+  );
+  transition: transform 4s ease-out;
+}
